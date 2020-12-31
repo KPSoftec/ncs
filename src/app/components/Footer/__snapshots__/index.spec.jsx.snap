@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> snapshot test 1`] = `
+<styled.footer>
+  <styled.div>
+    <styled.div
+      marginBottom={0}
+      marginTop={0}
+    >
+      <styled.span>
+        <styled.div
+          data-test-id="footer-details"
+        >
+          <styled.span>
+            © KPSoftec INDIA (Karan Khilwani)
+             
+            2020
+             
+            <styled.span>
+              XXXXXXXXXXXXXXXX
+            </styled.span>
+          </styled.span>
+        </styled.div>
+      </styled.span>
+    </styled.div>
+  </styled.div>
+</styled.footer>
+`;

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Avatar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="12.5"></circle>
+    </defs>
+    <g id="L!-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03b-Mobile-logon" transform="translate(-213.000000, -211.000000)">
+            <g id="Icons/Avatar-deep-ocean" transform="translate(213.000000, 211.000000)">
+                <g id="IconProfile">
+                    <circle id="Mask" stroke="#005682" stroke-width="2" cx="20" cy="20" r="19"></circle>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <path d="M19.2647059,22.1323529 L20.7352941,22.1323529 C26.5424058,22.1323529 31.25,26.8399471 31.25,32.6470588 C31.25,38.4541705 26.5424058,43.1617647 20.7352941,43.1617647 L19.2647059,43.1617647 C13.4575942,43.1617647 8.75,38.4541705 8.75,32.6470588 C8.75,26.8399471 13.4575942,22.1323529 19.2647059,22.1323529 Z M20,20.2205882 C16.8933983,20.2205882 14.375,17.6528096 14.375,14.4852941 C14.375,11.3177786 16.8933983,8.75 20,8.75 C23.1066017,8.75 25.625,11.3177786 25.625,14.4852941 C25.625,17.6528096 23.1066017,20.2205882 20,20.2205882 Z" id="Combined-Shape" fill="#005682" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

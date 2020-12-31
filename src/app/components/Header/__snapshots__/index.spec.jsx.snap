@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> snapshot test 1`] = `
+<styled.header>
+  <styled.div>
+    <styled.div
+      marginBottom={0}
+      marginTop={0}
+    >
+      <styled.div>
+        <styled.img
+          alt="Logo"
+          aria-label="A N Z Logo"
+          data-test-id="header-logo"
+          src="test-file-stub"
+        />
+        <styled.button
+          data-test-id="logout-button"
+          onClick={[Function]}
+        >
+          Logout
+        </styled.button>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;
+
+exports[`<Header /> snapshot test noLogout 1`] = `
+<styled.header>
+  <styled.div>
+    <styled.div
+      marginBottom={0}
+      marginTop={0}
+    >
+      <styled.div>
+        <styled.img
+          alt="Logo"
+          aria-label="A N Z Logo"
+          data-test-id="header-logo"
+          src="test-file-stub"
+        />
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;
+
+exports[`<Header /> snapshot test noLogout false 1`] = `
+<styled.header>
+  <styled.div>
+    <styled.div
+      marginBottom={0}
+      marginTop={0}
+    >
+      <styled.div>
+        <styled.img
+          alt="Logo"
+          aria-label="A N Z Logo"
+          data-test-id="header-logo"
+          src="test-file-stub"
+        />
+        <styled.button
+          data-test-id="logout-button"
+          onClick={[Function]}
+        >
+          Logout
+        </styled.button>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;
+
+exports[`<Header /> snapshot test showThemeSwitch checked 1`] = `
+<styled.header>
+  <styled.div>
+    <styled.div
+      marginBottom={0}
+      marginTop={0}
+    >
+      <styled.div>
+        <styled.img
+          alt="Logo"
+          aria-label="A N Z Logo"
+          data-test-id="header-logo"
+          src="test-file-stub"
+        />
+        <styled.button
+          data-test-id="logout-button"
+          onClick={[Function]}
+        >
+          Logout
+        </styled.button>
+        <styled.span>
+          <WithStyles(ForwardRef(Grid))
+            alignItems="center"
+            component="label"
+            container={true}
+            spacing={1}
+          >
+            <Styled(WithStyles(ForwardRef(Grid)))
+              item={true}
+            >
+              DARK
+            </Styled(WithStyles(ForwardRef(Grid)))>
+            <Styled(WithStyles(ForwardRef(Grid)))
+              item={true}
+            >
+              D
+            </Styled(WithStyles(ForwardRef(Grid)))>
+            <WithStyles(ForwardRef(Grid))
+              item={true}
+            >
+              <styled.div>
+                <styled.input
+                  checked={false}
+                  data-test-id="themeSwitch"
+                  id="checkbox"
+                  name="themeSwitch"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <styled.label
+                  htmlFor="checkbox"
+                />
+              </styled.div>
+            </WithStyles(ForwardRef(Grid))>
+            <Styled(WithStyles(ForwardRef(Grid)))
+              item={true}
+            >
+              L
+            </Styled(WithStyles(ForwardRef(Grid)))>
+            <Styled(WithStyles(ForwardRef(Grid)))
+              item={true}
+            >
+              LIGHT
+            </Styled(WithStyles(ForwardRef(Grid)))>
+          </WithStyles(ForwardRef(Grid))>
+        </styled.span>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;
+
+exports[`<Header /> snapshot test showThemeSwitch false 1`] = `
+<styled.header>
+  <styled.div>
+    <styled.div
+      marginBottom={0}
+      marginTop={0}
+    >
+      <styled.div>
+        <styled.img
+          alt="Logo"
+          aria-label="A N Z Logo"
+          data-test-id="header-logo"
+          src="test-file-stub"
+        />
+        <styled.button
+          data-test-id="logout-button"
+          onClick={[Function]}
+        >
+          Logout
+        </styled.button>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;
+
+exports[`<Header /> snapshot test showThemeSwitch unChecked 1`] = `
+<styled.header>
+  <styled.div>
+    <styled.div
+      marginBottom={0}
+      marginTop={0}
+    >
+      <styled.div>
+        <styled.img
+          alt="Logo"
+          aria-label="A N Z Logo"
+          data-test-id="header-logo"
+          src="test-file-stub"
+        />
+        <styled.button
+          data-test-id="logout-button"
+          onClick={[Function]}
+        >
+          Logout
+        </styled.button>
+        <styled.span>
+          <WithStyles(ForwardRef(Grid))
+            alignItems="center"
+            component="label"
+            container={true}
+            spacing={1}
+          >
+            <Styled(WithStyles(ForwardRef(Grid)))
+              item={true}
+            >
+              DARK
+            </Styled(WithStyles(ForwardRef(Grid)))>
+            <Styled(WithStyles(ForwardRef(Grid)))
+              item={true}
+            >
+              D
+            </Styled(WithStyles(ForwardRef(Grid)))>
+            <WithStyles(ForwardRef(Grid))
+              item={true}
+            >
+              <styled.div>
+                <styled.input
+                  checked={true}
+                  data-test-id="themeSwitch"
+                  id="checkbox"
+                  name="themeSwitch"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <styled.label
+                  htmlFor="checkbox"
+                />
+              </styled.div>
+            </WithStyles(ForwardRef(Grid))>
+            <Styled(WithStyles(ForwardRef(Grid)))
+              item={true}
+            >
+              L
+            </Styled(WithStyles(ForwardRef(Grid)))>
+            <Styled(WithStyles(ForwardRef(Grid)))
+              item={true}
+            >
+              LIGHT
+            </Styled(WithStyles(ForwardRef(Grid)))>
+          </WithStyles(ForwardRef(Grid))>
+        </styled.span>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;

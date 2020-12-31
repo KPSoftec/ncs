@@ -1,0 +1,63 @@
+{
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "src/**/*.{js,jsx}",
+        "!src/app/index.jsx",
+        "!src/**/.eslintrc.js",
+        "!src/app/**/*styles.js",
+        "!src/app/**/*.stories.jsx",
+        "!src/app/style/**",
+        "!src/assets/**",
+        "!src/environments/**",
+        "!src/side-effects/**",
+        "!node_modules/**",
+        "!src/app/.eslintrc.js"
+    ],
+    "coverageDirectory": "<rootDir>/reports/coverage/jest/",
+    "coveragePathIgnorePatterns": [
+        "/node_modules/"
+    ],
+    "coverageReporters": [
+        "json",
+        "html",
+        "lcov",
+        "text"
+    ],
+    "coverageThreshold": {
+        "global": {
+        "statements": 95,
+        "branches": 95,
+        "functions": 95,
+        "lines": 95
+        }
+    },
+    "moduleNameMapper": {
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|ico)$": "<rootDir>/test/mocks/fileMock.js",
+        "\\.(css|less)$": "<rootDir>/test/mocks/fileMock.js",
+        "snapsvg": "<rootDir>/test/mocks/snapSvgMock.js"
+    },
+    "rootDir": "../../",
+    "setupFiles": [
+        "<rootDir>/config/jest/enzymeAdapter.js",
+        "<rootDir>/test/mocks/globalFunctions.js",
+        "jest-canvas-mock"
+    ],
+    "setupFilesAfterEnv": ["raf/polyfill"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "reporters": [ "default",[
+        "jest-junit", {
+            "outputDirectory":"reports/unit",
+            "suiteName": "React-BoilerPlate Unit Tests",
+            "outputName": "junit.xml"
+        }],[
+            "jest-sonar", {
+            "outputDirectory": "reports/unit",
+            "outputName": "test-report.xml",
+            "reportedFilePath": "absolute"
+            }
+        ]],
+    "transformIgnorePatterns": [
+        "node_modules/(?!(@/*)/)"
+    ],
+    "verbose": true
+}

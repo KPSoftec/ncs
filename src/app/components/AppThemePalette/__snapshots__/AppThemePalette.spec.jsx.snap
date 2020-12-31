@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppThemePalette Component json renders snap-shot json snapshot test 1`] = `<div />`;
+
+exports[`AppThemePalette Component renders snap-shot match snapshot test 1`] = `
+<AppThemePalette
+  theme={
+    Object {
+      "OceanBlue": "#007dba",
+      "amber": "#f5a623",
+      "black": "#000",
+      "blackBlured": "#00000012",
+      "blackOpac": "#00000065",
+      "darkblue": "#98d7f0",
+      "deepOceanBlue": "#004165",
+      "disabledStone40": "#b0b7bc",
+      "flexboxgrid": Object {
+        "breakpoints": Object {
+          "lg": 48.25,
+          "md": 37.5625,
+          "sm": 30.0625,
+          "xs": 0,
+        },
+        "container": Object {
+          "sm": 48.1875,
+        },
+        "gutterWidth": 1,
+        "outerMargin": 2,
+      },
+      "fullWidth": true,
+      "gray": "#f7f7f7",
+      "grayHover": "#D1D0D5",
+      "green": "#008a02",
+      "greenHover": "#33c133",
+      "htmlLink": "#0072ac",
+      "infoActionBlue": "#006ba1",
+      "inputBorderPem": "#0093D8",
+      "inputColor": "#494949",
+      "kpsHeader": "#101010",
+      "lightBlack": "#ffffff",
+      "lightGray": "#3C3C4329",
+      "lightOceanBlue": "#008dd4",
+      "lightRed": "#FF000010",
+      "lightblue": "#e2f4fc",
+      "lighterFontStone70": "#6b7782",
+      "mode": "light",
+      "ocean30": "#b2d8ea",
+      "oceanBlue": "#0072ac",
+      "oceanBlueBlured10": "#007DBA10",
+      "oceanBlueBlured20": "#007DBA20",
+      "oceanBlueBlured40": "#007DBA40",
+      "oceanBluePerm": "#0072ac",
+      "primaryStone": "#394a58",
+      "red": "#d53d39",
+      "redBlured": "#dd2e2e10",
+      "redHover": "#ff0000",
+      "stoneExtraLight": "#fafafa",
+      "stoneLight": "#e6e9eb",
+      "transparent": "transparent",
+      "white": "#fff",
+      "whitePerm": "#ffffff",
+    }
+  }
+>
+  <ThemeProvider
+    theme={
+      Object {
+        "OceanBlue": "#007dba",
+        "amber": "#f5a623",
+        "black": "#000",
+        "blackBlured": "#00000012",
+        "blackOpac": "#00000065",
+        "darkblue": "#98d7f0",
+        "deepOceanBlue": "#004165",
+        "disabledStone40": "#b0b7bc",
+        "flexboxgrid": Object {
+          "breakpoints": Object {
+            "lg": 48.25,
+            "md": 37.5625,
+            "sm": 30.0625,
+            "xs": 0,
+          },
+          "container": Object {
+            "sm": 48.1875,
+          },
+          "gutterWidth": 1,
+          "outerMargin": 2,
+        },
+        "fullWidth": true,
+        "gray": "#f7f7f7",
+        "grayHover": "#D1D0D5",
+        "green": "#008a02",
+        "greenHover": "#33c133",
+        "htmlLink": "#0072ac",
+        "infoActionBlue": "#006ba1",
+        "inputBorderPem": "#0093D8",
+        "inputColor": "#494949",
+        "kpsHeader": "#101010",
+        "lightBlack": "#ffffff",
+        "lightGray": "#3C3C4329",
+        "lightOceanBlue": "#008dd4",
+        "lightRed": "#FF000010",
+        "lightblue": "#e2f4fc",
+        "lighterFontStone70": "#6b7782",
+        "mode": "light",
+        "ocean30": "#b2d8ea",
+        "oceanBlue": "#0072ac",
+        "oceanBlueBlured10": "#007DBA10",
+        "oceanBlueBlured20": "#007DBA20",
+        "oceanBlueBlured40": "#007DBA40",
+        "oceanBluePerm": "#0072ac",
+        "primaryStone": "#394a58",
+        "red": "#d53d39",
+        "redBlured": "#dd2e2e10",
+        "redHover": "#ff0000",
+        "stoneExtraLight": "#fafafa",
+        "stoneLight": "#e6e9eb",
+        "transparent": "transparent",
+        "white": "#fff",
+        "whitePerm": "#ffffff",
+      }
+    }
+  >
+    <Memo(GlobalStyleComponent) />
+    <div />
+  </ThemeProvider>
+</AppThemePalette>
+`;
