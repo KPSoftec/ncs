@@ -1,20 +1,16 @@
 import { call, put } from 'redux-saga/effects'
 
 import * as ApiConfig from '../../utils/apiConfig'
-import { TPPINFO_SUCCESS, TPPINFO_FAILURE } from '../../reducers/tppInfoDetailsReducer'
-import { EDIT_DATA_RESET } from '../../reducers/updateDataDetails/editDataReducer'
+import { ALBUMINFO_SUCCESS, ALBUMINFO_FAILURE } from '../../reducers/albumInfoDetailsReducer'
 
 import * as getProfile from '.'
 
-const getProfileGenerator = getProfile.getTPPInfo()
+const getProfileGenerator = getProfile.getAlbumInfo()
 const successResponse = {
   data: {},
 }
 const errorResponse = {
   error: {},
-}
-const editReset = {
-  edit: false,
 }
 
 const expectedHeaders = {
@@ -30,29 +26,22 @@ const expectedHeaders = {
   },
 }
 
-describe('Get TPPInfo API Config', () => {
-  test('Check for edit person state reset', () => {
-    expect(getProfileGenerator.next().value).toEqual(put({
-      payload: editReset,
-      type: EDIT_DATA_RESET,
-    }))
-  })
-
-  test('Check get TPPInfo API Call', () => {
-    expect(getProfileGenerator.next().value).toEqual(call(getProfile.getTPPInfoDataAction))
+describe('Get AlbumInfo API Config', () => {
+  test('Check get AlbumInfo API Call', () => {
+    expect(getProfileGenerator.next().value).toEqual(call(getProfile.getAlbumInfoDataAction))
   })
 
   test('Check for reducer call of api response', () => {
     expect(getProfileGenerator.next(successResponse).value).toEqual(put({
       payload: successResponse,
-      type: TPPINFO_SUCCESS,
+      type: ALBUMINFO_SUCCESS,
     }))
   })
 
   test('Check for reducer call of api Error response', () => {
     expect(getProfileGenerator.throw(errorResponse).value).toEqual(put({
       payload: errorResponse,
-      type: TPPINFO_FAILURE,
+      type: ALBUMINFO_FAILURE,
     }))
   })
 
@@ -60,7 +49,7 @@ describe('Get TPPInfo API Config', () => {
     ApiConfig.getUUIDTimeBased = jest.fn()
     const mockPostFunction = { post: jest.fn() }
     ApiConfig.getApiConfig = jest.fn(() => mockPostFunction)
-    getProfile.getTPPInfoDataAction()
+    getProfile.getAlbumInfoDataAction()
     expect(mockPostFunction.post).toHaveBeenCalledWith(
       ApiConfig.apiUriConfig.getTppInfo,
       {},
