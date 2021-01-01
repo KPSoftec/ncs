@@ -1,5 +1,6 @@
 import { URL_KEYS, URL_VALUES } from './url-params.constants'
 import device from './device'
+import { getSessionStorage, setSessionStorage } from './sessionStorage'
 
 const { mobile, os } = device
 export const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
@@ -35,3 +36,21 @@ export const isAndroid = () => {
 }
 
 export const isMobileAppChannel = () => (isMobileDevice() || isIOS() || isAndroid())
+
+export const setQueryParamsObj = () => {
+  const queryParamsString = window.location.search.substr(1)
+  queryParamsString.split('&').forEach((singleQueryParam) => {
+    const [key, value] = singleQueryParam.split('=')
+    getQueryStringByName(key)
+    setSessionStorage(key, value)
+  })
+}
+
+/* eslint-disable no-param-reassign */
+export const getQueryParamsObj = () => {
+  const params = Object.keys(sessionStorage).reduce((obj, key) => {
+    obj[key] = getSessionStorage(key)
+    return obj
+  }, {})
+  return params
+}
