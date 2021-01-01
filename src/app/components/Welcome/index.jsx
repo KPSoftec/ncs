@@ -47,7 +47,7 @@ const Welcome = (props) => {
       <AppContainer>
 
         <Grid noBorder>
-          <GridRow>
+          <GridRow noBorder>
             <GridColumn xs>
               <Wrap>
                 <Search>
@@ -90,7 +90,7 @@ const Welcome = (props) => {
 
         <Grid>
 
-          <GridRow noBorder>
+          <GridRow noBorder paddingTop="100px">
 
             {albums && albums.data && albums.data.total < 1 ? <h1>LOADING</h1>
               : _.sortBy(albums,
